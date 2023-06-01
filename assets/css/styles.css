@@ -11,8 +11,9 @@
     margin-left: 1rem;
     transform: scaleX(0.6);
 }
-.navBar {
+.myNavBar {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     padding-top: 1rem;
     background-color: black;

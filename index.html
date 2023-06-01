@@ -5,51 +5,107 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Gary Gutierrez Portafolio</title>
-        <link rel="stylesheet" href="./assets/css/styles.css" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="./assets/css/stylesBootstrap.css" />
     </head>
     <body>
-        <nav>
-            <div class="navBar">
-                <div class="logo">
-                    <a href="./index.html"
-                        ><h1 class="myName">Gary Gutierrez</h1></a
-                    >
-                </div>
-                <div class="menu">
-                    <p class="menuText">
-                        <a href="./whatIDo.html">what I do</a>
-                    </p>
-                    <!-- <p class="menuText">How do I do it</p> -->
-                    <p class="menuText">
-                        <a href="./projects.html">Projects</a>
-                    </p>
-                    <p class="menuText">
-                        <a href="./letsConnect.html">Let's connect!</a>
-                    </p>
+        <!-- begining of navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand text-light" href="./index.html"
+                    >Gary Gutierrez
+                </a>
+                <button
+                    class="navbar-toggler bg-light"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                    class="collapse navbar-collapse"
+                    id="navbarSupportedContent"
+                >
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a
+                                class="nav-link active text-light"
+                                aria-current="page"
+                                href="./whatIDo.html"
+                                >What I Do</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link active text-light"
+                                aria-current="page"
+                                href="./projects.html"
+                                >Projects</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link active text-light"
+                                aria-current="page"
+                                href="./letsConnect.html"
+                                >Let's Connect</a
+                            >
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
-        <main>
-            <div class="description">
-                <div class="mainTags">
-                    <h1 class="myTags">ENGINEER</h1>
-                    <h1 class="myTags">DESIGNER</h1>
-                </div>
-
-                <div class="myResumee">
-                    <p class="descriptionText">I am an Industrial Engineer</p>
-                    <p class="descriptionText">based in LATAM,</p>
-                    <p class="descriptionText">
-                        Passionate about conceptual design.
-                    </p>
-                    <p class="descriptionText">Certified Product Owner</p>
-                    <p class="descriptionText">and front end dev in process.</p>
-                    <p class="descriptionText">I love drawing, architecture,</p>
-                    <p class="descriptionText">
-                        music, traveling, and life in general.
-                    </p>
+        <!-- end of navbar -->
+        <main class="bg-dark">
+            <!-- begin of bootstrap grid -->
+            <div class="container bg-dark">
+                <div class="row">
+                    <div class="col col-lg-12">
+                        <div class="mainTags">
+                            <h1 class="myTags text-light">ENGINEER</h1>
+                            <h1 class="myTags lastTag text-light">DESIGNER</h1>
+                        </div>
+                    </div>
+                    <div class="col text-light">
+                        <div class="myResumee">
+                            <p class="descriptionText">
+                                I am an Industrial Engineer
+                            </p>
+                            <p class="descriptionText">based in LATAM,</p>
+                            <p class="descriptionText">
+                                Passionate about conceptual design.
+                            </p>
+                            <p class="descriptionText">
+                                Certified Product Owner
+                            </p>
+                            <p class="descriptionText">
+                                and front end dev in process.
+                            </p>
+                            <p class="descriptionText">
+                                I love drawing, architecture,
+                            </p>
+                            <p class="descriptionText">
+                                music, traveling, and life in general.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <!-- end of bootstrap grid -->
+            <!-- begining of footer -->
+            <footer class="bg-dark">
+                <p>2023. All rights reserved.</p>
+            </footer>
+            <!-- end of footer -->
         </main>
     </body>
 </html>
