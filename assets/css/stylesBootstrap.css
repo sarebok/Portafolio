@@ -37,3 +37,29 @@ footer p {
     text-align: center;
     color: gray;
 }
+
+.curriculum {
+    justify-content: center;
+    align-items: center;
+}
+
+.curriculum h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border-bottom: 1px solid white;
+}
+.curriculum h4 {
+    text-align: center;
+    font-weight: 200;
+}
+
+.curriculum p {
+    text-align: center;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+
+.cardWorkPosition {
+    border-bottom: 1px dashed white;
+}
