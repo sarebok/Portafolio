@@ -63,3 +63,29 @@ footer p {
 .cardWorkPosition {
     border-bottom: 1px dashed white;
 }
+
+.portafolioImage {
+    width: 300px;
+}
+
+.cardPortafolio {
+    display: flex;
+    align-items: center;
+}
+
+.cardPortafolio img {
+    border-radius: 5%;
+    margin-right: 30px;
+}
+
+.cardPortafolio:hover {
+    background-color: brown;
+}
+
+.cardText {
+    text-align: center;
+}
+
+.cardText p {
+    text-align: center;
+}
