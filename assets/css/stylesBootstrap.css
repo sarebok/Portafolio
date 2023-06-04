@@ -71,11 +71,12 @@ footer p {
 .cardPortafolio {
     display: flex;
     align-items: center;
+    margin: 20px 0;
 }
 
 .cardPortafolio img {
     border-radius: 5%;
-    margin-right: 30px;
+    margin: 10px auto;
 }
 
 .cardPortafolio:hover {
