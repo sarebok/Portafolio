@@ -84,8 +84,17 @@ footer p {
     text-align: center;
 }
 
+.cardWorkPosition h4,
+.cardWorkPosition h5 {
+    font-weight: 100;
+}
 .cardWorkPosition h4 {
     font-weight: 100;
+    margin-top: 1.5rem;
+}
+.cardWorkPosition h5 {
+    font-style: italic;
+    margin-bottom: 1.5rem;
 }
 
 .cardWorkPosition {
