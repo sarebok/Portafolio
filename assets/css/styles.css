@@ -23,11 +23,11 @@ body {
 h1,
 h4,
 p {
-  color: white;
+  color: wheat;
 }
 
 .barras {
-  color: white;
+  color: wheat;
   font-size: 1.3rem;
 }
 
@@ -70,7 +70,7 @@ nav p {
   padding: 0;
   font-size: 5.5rem;
   font-family: "Oswald", sans-serif;
-  color: aliceblue;
+  color: wheat;
   transform: scaleY(1.8);
   animation: aparecer 2s ease 0s;
 }
@@ -81,26 +81,27 @@ nav p {
 }
 
 .description-text {
-  color: aliceblue;
+  color: wheat;
   margin: 0.3rem;
   animation: aparecer 2s ease 0.5s;
 }
 
 main {
   grid-area: main;
+  margin-bottom: 4rem;
 }
 main h1 {
   margin-top: 10rem;
   text-align: center;
   font-family: "Agdasima", sans-serif;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 footer {
   grid-area: footer;
   background-color: black;
-  color: aliceblue;
+  color: wheat;
   text-align: center;
   border-top: 1px solid aliceblue;
   padding: 1rem;
@@ -147,11 +148,11 @@ footer {
 
 @keyframes aparecer {
   from {
-    color: black;
+    color: white;
   }
 
   to {
-    color: white;
+    color: wheat;
   }
 }
 
@@ -183,15 +184,9 @@ footer {
     display: flex;
   }
   .my-tags {
-    margin: 0;
-    padding: 0;
     font-size: 5.5rem;
-    font-family: "Oswald", sans-serif;
-    color: aliceblue;
-    transform: scaleY(1.8);
   }
   .description-text {
-    color: aliceblue;
     margin: 0.3rem;
     font-size: 1.1rem;
   }
@@ -217,23 +212,29 @@ footer {
     font-size: 2rem;
     margin-left: 1rem;
   }
+
+  nav {
+    background-color: rgba(58, 43, 43, 0.178);
+    border: 1px outset rgb(255, 153, 0, 0.3);
+    border-radius: 10%;
+  }
+
+  nav ul {
+    background-color: rgba(58, 43, 43, 0.3);
+    color: wheat;
+    padding: 1rem;
+  }
 }
 
 @media (min-width: 850px) {
   .my-tags {
-    margin: 0;
-    padding: 0;
     font-size: 7.5rem;
-    font-family: "Oswald", sans-serif;
-    color: aliceblue;
-    transform: scaleY(1.8);
   }
 
   .barras {
     display: none;
   }
   .description-text {
-    color: aliceblue;
     margin: 0.3rem;
     font-size: 1.4rem;
   }
@@ -248,15 +249,9 @@ footer {
 
 @media (min-width: 1050px) {
   .my-tags {
-    margin: 0;
-    padding: 0;
     font-size: 9.5rem;
-    font-family: "Oswald", sans-serif;
-    color: aliceblue;
-    transform: scaleY(1.8);
   }
   .description-text {
-    color: aliceblue;
     margin: 0.3rem;
     font-size: 1.4rem;
   }
@@ -276,9 +271,6 @@ footer {
   nav {
     flex-direction: column;
     justify-content: flex-start;
-    border: none;
-    background-color: rgba(58, 43, 43, 0.178);
-    border: 1px outset rgb(255, 153, 0, 0.3);
   }
 
   nav p {
@@ -291,12 +283,6 @@ footer {
     margin-top: 10rem;
     font-size: 1.6rem;
     position: fixed;
-  }
-
-  nav ul {
-    background-color: rgba(58, 43, 43, 0.3);
-    color: wheat;
-    padding: 1rem;
   }
 
   .main-tags {
