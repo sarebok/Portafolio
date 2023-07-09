@@ -5,6 +5,7 @@ body {
   margin: 0;
   background-color: black;
   box-sizing: border-box;
+  background-image: url(../img/wallpaperflare.com_wallpaper.jpg);
 }
 
 .root {
@@ -35,7 +36,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: black;
+  /* background-color: black; */
   color: aliceblue;
   border-bottom: 1px solid aliceblue;
   margin: 1rem 0;
@@ -116,6 +117,20 @@ footer {
   margin: 0 0.5rem 1rem 0.5rem;
   /* width: 100%;
   height: 180px; */
+  box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.8);
+}
+
+.project-card h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  background-color: rgba(58, 43, 43, 0.7);
+  padding: 1rem;
+}
+
+.project-card p {
+  font-size: 1.3rem;
+  background-color: rgba(58, 43, 43, 0.7);
+  padding: 1rem;
 }
 
 .project-card img {
@@ -262,6 +277,8 @@ footer {
     flex-direction: column;
     justify-content: flex-start;
     border: none;
+    background-color: rgba(58, 43, 43, 0.178);
+    border: 1px outset rgb(255, 153, 0, 0.3);
   }
 
   nav p {
@@ -274,6 +291,12 @@ footer {
     margin-top: 10rem;
     font-size: 1.6rem;
     position: fixed;
+  }
+
+  nav ul {
+    background-color: rgba(58, 43, 43, 0.3);
+    color: wheat;
+    padding: 1rem;
   }
 
   .main-tags {
