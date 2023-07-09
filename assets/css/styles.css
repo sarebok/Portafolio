@@ -48,6 +48,11 @@ nav p {
   margin: 0;
 }
 
+.my-placeholder {
+  display: flex;
+  width: 100%;
+}
+
 .menu {
   display: flex;
   justify-content: flex-end;
@@ -143,8 +148,7 @@ footer {
       "footer footer";
   }
 
-  .fa-solid,
-  nav i {
+  .fa-solid {
     display: none;
   }
 
@@ -209,5 +213,15 @@ footer {
   }
   .my-resumee {
     margin: 16rem 0 0 1rem;
+  }
+}
+
+@media (min-width: 1250) {
+  .root {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "nav main-tags my-resumee"
+      "nav main main"
+      "footer footer footer";
   }
 }
