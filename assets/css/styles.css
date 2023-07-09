@@ -70,6 +70,7 @@ nav p {
   font-family: "Oswald", sans-serif;
   color: aliceblue;
   transform: scaleY(1.8);
+  animation: aparecer 2s ease 0s;
 }
 
 .my-resumee {
@@ -80,7 +81,7 @@ nav p {
 .description-text {
   color: aliceblue;
   margin: 0.3rem;
-  animation: aparecer 1s ease 1s;
+  animation: aparecer 2s ease 1s;
 }
 
 main {
