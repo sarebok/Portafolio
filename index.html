@@ -1,6 +1,7 @@
 <!-- 
     
-    Hola Profe. Este es mi trabajo. En realidad es lo que estoy imaginando como mi pagina personal, etonces la estructura para cumplir con el desafio de esta semana es la siguiente:
+    Hola Profe. Este es mi trabajo. En realidad es lo que estoy imaginando como mi pagina personal,
+    etonces la estructura para cumplir con el desafio de esta semana es la siguiente:
 1.- index.hml-> funciona como "landing page", a modo de presentacion basicamente 
 2.- whatIDo.html-> contiene lo que seria mi curriculum
 3.- projects.html-> contiene lo que seria mi portafolio
@@ -18,20 +19,21 @@ use algo de bootstrap pero tambien cree mi propio css. Gracias!
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gary Gutierrez Portafolio</title>
     <link rel="stylesheet" href="./assets/css/styles.css" />
+    <script src="https://kit.fontawesome.com/84b45ae2a7.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <div class="root">
       <!-- begining of navbar -->
       <nav>
         <p>Gary Gutierrez Portafolio</p>
-        <p>button</p>
+        <i class="fa-solid fa-bars"></i>
       </nav>
       <!-- end of navbar -->
       <!-- begining of main -->
-      <main>
+      <summary>
         <div class="main-tags">
-          <h1 class="myTags">ENGINEER</h1>
-          <h1 class="myTags">DESIGNER</h1>
+          <h1 class="my-tags">ENGINEER</h1>
+          <h1 class="my-tags">DESIGNER</h1>
         </div>
         <div class="my-resumee">
           <p class="description-text">I am an Industrial Engineer</p>
@@ -42,12 +44,47 @@ use algo de bootstrap pero tambien cree mi propio css. Gracias!
           <p class="description-text">I love drawing, architecture,</p>
           <p class="description-text">music, traveling, and life in general.</p>
         </div>
-        <!-- begining of footer -->
-        <footer class="bg-dark">
-          <p>Gary Gutierrez, 2023. All rights reserved.</p>
-        </footer>
-        <!-- end of footer -->
+      </summary>
+      <!-- end of main -->
+      <!-- begin of image gallery -->
+      <main>
+        <div class="projects-gallery">
+          <h1>My Projects Gallery</h1>
+          <div class="project-card">
+            <img src="./assets/img/firstCV.png" alt="my firs cv project" />
+            <div class="project-description">
+              <h4 class="descriptionText">First try of CV</h4>
+              <p>
+                This is the first try of a CV made with code. The idea is to
+                keep updating it with diferent technologies that I will learn.
+                Here I was experimenting a little bit with bootstrap.
+              </p>
+            </div>
+          </div>
+          <div class="project-card">
+            <img src="./assets/img/Marketplace.png" alt="my first try of marketplace" />
+            <h4 class="descriptionText">
+              First try of Marketplace
+          </h4>
+          <p>
+              This marketplace was made using bootstrap,
+              and doing it I learned to read code a little
+              better, to plan and design previously and to
+              code better
+            </div>
+          </div>
+        </div>
       </main>
+      <!-- end of image gallery -->
+
+      <!-- begining of footer -->
+      <footer>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-github"></i>
+        <p>Gary Gutierrez, 2023. All rights reserved.</p>
+      </footer>
+      <!-- end of footer -->
     </div>
   </body>
 </html>
