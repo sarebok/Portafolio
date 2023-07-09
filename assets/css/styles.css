@@ -10,7 +10,6 @@ body {
 .root {
   display: grid;
   grid-template-columns: 1fr;
-  /* grid-template-rows: 1fr 15fr 1fr; */
   grid-template-areas:
     "nav"
     "main-tags"
@@ -215,9 +214,6 @@ footer {
     color: aliceblue;
     transform: scaleY(1.8);
   }
-  .barras {
-    display: none;
-  }
   .description-text {
     color: aliceblue;
     margin: 0.3rem;
@@ -228,15 +224,37 @@ footer {
   }
 }
 
-@media (min-width: 1250) {
-  .barras {
-    display: none;
-  }
+@media (min-width: 1250px) {
   .root {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
       "nav main-tags my-resumee"
       "nav main main"
       "footer footer footer";
+  }
+  nav {
+    flex-direction: column;
+    justify-content: flex-start;
+    border: none;
+  }
+
+  nav p {
+    font-size: 1.6rem;
+    position: fixed;
+  }
+
+  nav li {
+    flex-direction: column;
+    margin-top: 10rem;
+    font-size: 1.6rem;
+    position: fixed;
+  }
+
+  .main-tags {
+    margin-top: 7rem;
+  }
+
+  .my-resumee {
+    margin-top: 23rem;
   }
 }
