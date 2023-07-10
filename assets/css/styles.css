@@ -45,14 +45,7 @@ nav {
 
 li {
   list-style: none;
-  /* display: none; */
-  position: fixed;
-  right: 0;
-  top: 3.3rem;
-  padding: 0 0.5rem;
-  background-color: rgba(58, 43, 43, 0.3);
-  transform: translateX(110%);
-  transition: transform 0.5s ease;
+  display: none;
 }
 
 nav p {
@@ -153,9 +146,9 @@ footer {
   color: blueviolet;
 } */
 
-nav:hover li {
+/* nav:hover li {
   transform: translateX(0);
-}
+} */
 
 .project-card img:hover {
   transform: scale(1.2);
